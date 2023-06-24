@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcom to My World</title>
+    <meta http-equiv="Content-type" content="text/html"/>
+</head>
+<body>
+Hello PB
+<a href="/hello">hello</a>  <!--a href: hello를 클릭하면 /hello라는 페이지 url로 넘어감-->
+<p> 문단 띄워</p>
+<a href="/hello-mvc?name=spring?!?!?">hello+mvc</a> <!--동적 페이지는 컨트롤러에 매핑된 이름으로 들어가면 view가 나옴. 그래서 뒤에 .html 필요 없음-->
+<!--즉, hello+mvc를 누르면 hello-mvc링크로 가고, 이 링크는 컨트롤러에 매핑된 것. 따라서 작업 거친 후 컨트롤러의 함수에서 return된
+hello-template라는 이름의 html파일을 찾아 모델을 통해 작업물을 전달해 view를 띄운다.-->
+<!--정리하면 hello+mvc == hello-mvc -> 모델 이용해서 뭔가 작업, 외부로부터 파라미터 받아서 또 작업 -> hello-template -> 작업 내용 적용해서
+hello-template.html을 띄움(view)-->
+<!--hello-mvc뒤에 ?name=spring이 name 파라미터에 spring을 GET방식으로 넣게다는 의미-->
+<p> 문단 띄워</p>
+<a href="/amuguna.html">amu</a>  <!--하이퍼링크 눌러서 정적 페이지 띄우기-->
+</body>
+</html>

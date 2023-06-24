@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="'hello '+ ${name}">hello! empty</p>  <!--hello! empty는 템플릿 엔진 없이 정적으로 페이지를 띄웠을 때 뜨게 된다.-->
+                                                 <!--템플릿 엔진 통해서 동적으로 페이지 띄우면 hello + ${name}으로 치환된다.-->
+</body>
+</html>

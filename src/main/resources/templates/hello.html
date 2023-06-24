@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">  <!--th는 thymeleaf url을 의미-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Page</title>
+    <meta http-equiv="Content-Type" content="text/html"/>
+</head>
+<body>
+<!--p는 문단 정의.-->
+<p th:text="'안녕하세요. '+${data}"></p>  <!--위에 th 연결 안해주면 오류 난다. data는 HelloController에서 설정한 attribute 이름-->
+</body>
+</html>

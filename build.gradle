@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.1.0'
+	id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'PB'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	mavenCentral()  // 밑에 가져온 라이브러리들 maven사이트에서 다운 받게 하는 함수. 원한다면 특정 사이트 url 이용해도 됨.
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'  // html 템플릿 엔진: thymeleaf
+	implementation 'org.springframework.boot:spring-boot-starter-web'  // 웹 프로젝트: spring web
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'  // testing 라이브러리: JUnit
+	developmentOnly('org.springframework.boot:spring-boot-devtools')
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
