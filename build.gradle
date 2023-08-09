@@ -19,7 +19,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'  // html 템플릿 엔진: thymeleaf
 	implementation 'org.springframework.boot:spring-boot-starter-web'  // 웹 프로젝트: spring web
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'  // testing 라이브러리: JUnit
-	developmentOnly('org.springframework.boot:spring-boot-devtools')
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
 tasks.named('test') {
